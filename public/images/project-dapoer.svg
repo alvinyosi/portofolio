@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 980" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="70" y1="0" x2="820" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#242424"/><stop offset="1" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="263" y1="169" x2="694" y2="790" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#343434"/><stop offset="1" stop-color="#151515"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h900v980H0z"/>
+  <path stroke="#454545" stroke-dasharray="3 8" d="M45 86h810M45 891h810"/>
+  <text x="69" y="58" fill="#AAA" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">DAPOER MAMANA / PRE-ORDER EXPERIENCE</text>
+  <rect x="207" y="133" width="490" height="681" rx="8" fill="#090909" stroke="#686868"/>
+  <rect x="219" y="145" width="466" height="657" rx="4" fill="url(#screen)"/>
+  <path fill="#252525" d="M219 149a4 4 0 0 1 4-4h458a4 4 0 0 1 4 4v42H219v-42Z"/>
+  <circle cx="236" cy="168" r="4" fill="#777"/><circle cx="250" cy="168" r="4" fill="#555"/><circle cx="264" cy="168" r="4" fill="#444"/>
+  <rect x="291" y="159" width="270" height="17" rx="8.5" fill="#111" stroke="#3C3C3C"/>
+  <text x="377" y="171" fill="#AAA" font-family="Arial,sans-serif" font-size="8">dapoe[r]mamana.id</text>
+  <text x="257" y="234" fill="#F2F2F2" font-family="Georgia,serif" font-size="19">dapoer mamana</text>
+  <text x="566" y="234" fill="#B8B8B8" font-family="Arial,sans-serif" font-size="9" letter-spacing="1">MENU  ☰</text>
+  <path stroke="#555" d="M254 250h394"/>
+  <text x="257" y="303" fill="#EDEDED" font-family="Arial,sans-serif" font-size="29" letter-spacing="1">RASA RUMAH,</text>
+  <text x="257" y="338" fill="#EDEDED" font-family="Arial,sans-serif" font-size="29" letter-spacing="1">UNTUK SEMUA.</text>
+  <text x="258" y="365" fill="#999" font-family="Arial,sans-serif" font-size="10">Pesan hidangan rumahan favoritmu dengan mudah.</text>
+  <rect x="258" y="390" width="124" height="33" fill="#F1F1EF"/>
+  <text x="273" y="410" fill="#111" font-family="Arial,sans-serif" font-size="9" letter-spacing="1">PESAN SEKARANG ↗</text>
+  <rect x="257" y="462" width="177" height="184" fill="#292929"/>
+  <path fill="#3A3A3A" d="M281 580c18-66 66-88 117-75 3 49-19 98-67 112-23 7-41-8-50-37Z"/>
+  <circle cx="344" cy="552" r="37" fill="#575757"/><circle cx="344" cy="552" r="26" fill="#272727"/>
+  <path d="M314 532c22 16 42 31 61 46M355 518c-3 24-7 48-15 72" stroke="#949494" stroke-width="2"/>
+  <rect x="449" y="466" width="198" height="11" rx="5.5" fill="#626262"/>
+  <rect x="449" y="489" width="152" height="7" rx="3.5" fill="#444"/>
+  <text x="449" y="533" fill="#E6E6E6" font-family="Arial,sans-serif" font-size="14">Menu pilihan hari ini</text>
+  <rect x="449" y="549" width="198" height="1" fill="#4B4B4B"/>
+  <text x="449" y="577" fill="#BBB" font-family="Arial,sans-serif" font-size="10">Nasi ayam rempah</text><text x="613" y="577" fill="#EEE" font-family="Arial,sans-serif" font-size="10">25k</text>
+  <rect x="449" y="590" width="198" height="1" fill="#4B4B4B"/>
+  <text x="449" y="618" fill="#BBB" font-family="Arial,sans-serif" font-size="10">Paket sayur harian</text><text x="613" y="618" fill="#EEE" font-family="Arial,sans-serif" font-size="10">18k</text>
+  <rect x="449" y="631" width="198" height="1" fill="#4B4B4B"/>
+  <rect x="257" y="673" width="390" height="95" fill="#1C1C1C"/>
+  <text x="278" y="705" fill="#E6E6E6" font-family="Arial,sans-serif" font-size="13">Pesan sesuai waktumu</text>
+  <text x="278" y="725" fill="#8F8F8F" font-family="Arial,sans-serif" font-size="9">Pilih jadwal, konfirmasi pesanan, lalu nikmati.</text>
+  <rect x="278" y="740" width="97" height="17" rx="8" stroke="#666"/>
+  <text x="292" y="752" fill="#BBB" font-family="Arial,sans-serif" font-size="7">LIHAT MENU  ↗</text>
+  <text x="69" y="937" fill="#777" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">USER-CENTERED DESIGN / 2025</text>
+  <text x="778" y="937" fill="#777" font-family="Arial,sans-serif" font-size="10">01 — 03</text>
+</svg>

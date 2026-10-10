@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none">
+  <defs><linearGradient id="b" x1="70" y1="0" x2="900" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#272727"/><stop offset="1" stop-color="#0B0B0B"/></linearGradient></defs>
+  <path fill="url(#b)" d="M0 0h1000v620H0z"/>
+  <path stroke="#414141" stroke-dasharray="3 8" d="M46 75h908M46 545h908"/>
+  <text x="62" y="52" fill="#888" font-family="Arial,sans-serif" font-size="10" letter-spacing="3">ALVIN / PERSONAL PORTFOLIO</text>
+  <text x="62" y="123" fill="#EEE" font-family="Arial,sans-serif" font-size="11" letter-spacing="2">DESIGN / BUILD / ITERATE</text>
+  <text x="62" y="195" fill="#F1F1F1" font-family="Arial,sans-serif" font-size="56" letter-spacing="-2">DIGITAL</text>
+  <text x="62" y="254" fill="#F1F1F1" font-family="Arial,sans-serif" font-size="56" letter-spacing="-2">EXPERIENCES.</text>
+  <text x="64" y="290" fill="#999" font-family="Arial,sans-serif" font-size="12">Thoughtful design, made useful.</text>
+  <rect x="64" y="324" width="135" height="38" stroke="#AAA"/><text x="80" y="348" fill="#DDD" font-family="Arial,sans-serif" font-size="9" letter-spacing="1">EXPLORE WORK ↗</text>
+  <path d="M676 119 854 221v205L676 529 498 426V221l178-102Z" stroke="#AAA" stroke-opacity=".8"/>
+  <path d="m676 119 1 205 177 102M676 324 498 221m179 103v205m0-205 177-103M498 426l179-102 177 102" stroke="#777"/>
+  <path d="m676 119 88 51-87 154-90-154 89-51Zm1 205 89-103v205l-89-102Zm0 0-90 102V221l90 103Z" fill="#EEE" fill-opacity=".08" stroke="#AAA" stroke-opacity=".65"/>
+  <circle cx="676" cy="324" r="5" fill="#EEE"/><path stroke="#777" stroke-dasharray="2 7" d="M420 96v348"/>
+  <text x="62" y="579" fill="#777" font-family="Arial,sans-serif" font-size="9" letter-spacing="2">CRAFTED WITH CURIOSITY / 2026</text>
+  <text x="887" y="579" fill="#777" font-family="Arial,sans-serif" font-size="9">03 — 03</text>
+</svg>

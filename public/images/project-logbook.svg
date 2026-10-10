@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" fill="none">
+  <defs><linearGradient id="b" x1="0" y1="0" x2="1000" y2="620" gradientUnits="userSpaceOnUse"><stop stop-color="#242424"/><stop offset="1" stop-color="#090909"/></linearGradient></defs>
+  <path fill="url(#b)" d="M0 0h1000v620H0z"/>
+  <text x="54" y="49" fill="#888" font-family="Arial,sans-serif" font-size="11" letter-spacing="3">MSJ / CATERING OPERATIONS</text>
+  <rect x="54" y="83" width="892" height="479" rx="4" fill="#101010" stroke="#414141"/>
+  <rect x="54" y="83" width="172" height="479" fill="#171717"/>
+  <text x="77" y="121" fill="#EEE" font-family="Arial,sans-serif" font-size="13" letter-spacing="1">LOG BOOK</text>
+  <path stroke="#333" d="M72 141h136"/>
+  <text x="78" y="177" fill="#AAA" font-family="Arial,sans-serif" font-size="10">▦  Dashboard</text>
+  <rect x="68" y="193" width="144" height="34" fill="#303030"/>
+  <text x="78" y="215" fill="#F1F1F1" font-family="Arial,sans-serif" font-size="10">▤  Daily records</text>
+  <text x="78" y="255" fill="#888" font-family="Arial,sans-serif" font-size="10">♧  Meal plans</text>
+  <text x="78" y="293" fill="#888" font-family="Arial,sans-serif" font-size="10">◷  Reports</text>
+  <circle cx="89" cy="515" r="15" fill="#333"/><text x="114" y="512" fill="#BBB" font-family="Arial,sans-serif" font-size="9">ALVIN</text><text x="114" y="526" fill="#777" font-family="Arial,sans-serif" font-size="8">Administrator</text>
+  <text x="256" y="130" fill="#F1F1F1" font-family="Arial,sans-serif" font-size="19">Daily overview</text>
+  <text x="256" y="151" fill="#858585" font-family="Arial,sans-serif" font-size="10">Wednesday, 12 November 2025</text>
+  <rect x="256" y="176" width="201" height="88" fill="#1B1B1B" stroke="#373737"/><text x="275" y="203" fill="#999" font-family="Arial,sans-serif" font-size="9">TOTAL MEALS</text><text x="275" y="242" fill="#EEE" font-family="Arial,sans-serif" font-size="29">248</text>
+  <rect x="472" y="176" width="201" height="88" fill="#1B1B1B" stroke="#373737"/><text x="491" y="203" fill="#999" font-family="Arial,sans-serif" font-size="9">COMPLETED</text><text x="491" y="242" fill="#EEE" font-family="Arial,sans-serif" font-size="29">216</text>
+  <rect x="688" y="176" width="233" height="88" fill="#1B1B1B" stroke="#373737"/><text x="707" y="203" fill="#999" font-family="Arial,sans-serif" font-size="9">PENDING RECORDS</text><text x="707" y="242" fill="#EEE" font-family="Arial,sans-serif" font-size="29">08</text>
+  <rect x="256" y="285" width="665" height="240" fill="#161616" stroke="#353535"/>
+  <text x="276" y="313" fill="#DDD" font-family="Arial,sans-serif" font-size="11">Recent meal records</text><text x="839" y="313" fill="#999" font-family="Arial,sans-serif" font-size="9">VIEW ALL ↗</text>
+  <path stroke="#343434" d="M275 330h624M275 370h624M275 410h624M275 450h624M275 490h624"/>
+  <text x="277" y="355" fill="#999" font-family="Arial,sans-serif" font-size="9">TIME</text><text x="390" y="355" fill="#999" font-family="Arial,sans-serif" font-size="9">MENU</text><text x="669" y="355" fill="#999" font-family="Arial,sans-serif" font-size="9">QUANTITY</text><text x="799" y="355" fill="#999" font-family="Arial,sans-serif" font-size="9">STATUS</text>
+  <text x="277" y="395" fill="#CCC" font-family="Arial,sans-serif" font-size="10">10:30</text><text x="390" y="395" fill="#CCC" font-family="Arial,sans-serif" font-size="10">Chicken rice bowl</text><text x="677" y="395" fill="#CCC" font-family="Arial,sans-serif" font-size="10">120 meals</text><text x="799" y="395" fill="#AAA" font-family="Arial,sans-serif" font-size="9">COMPLETE</text>
+  <text x="277" y="435" fill="#CCC" font-family="Arial,sans-serif" font-size="10">12:00</text><text x="390" y="435" fill="#CCC" font-family="Arial,sans-serif" font-size="10">Vegetable set</text><text x="677" y="435" fill="#CCC" font-family="Arial,sans-serif" font-size="10">80 meals</text><text x="799" y="435" fill="#AAA" font-family="Arial,sans-serif" font-size="9">IN PROGRESS</text>
+  <text x="277" y="475" fill="#CCC" font-family="Arial,sans-serif" font-size="10">15:30</text><text x="390" y="475" fill="#CCC" font-family="Arial,sans-serif" font-size="10">Snack package</text><text x="677" y="475" fill="#CCC" font-family="Arial,sans-serif" font-size="10">48 meals</text><text x="799" y="475" fill="#AAA" font-family="Arial,sans-serif" font-size="9">SCHEDULED</text>
+</svg>

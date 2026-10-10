@@ -1,0 +1,51 @@
+<?php
+
+return [
+    'name' => 'Alvin Yosi Eka Putra',
+    'email' => 'vindmajesty@gmail.com',
+    'location' => 'Jawa Timur, Surabaya, Indonesia',
+    'socials' => [
+        'linkedin' => 'https://www.linkedin.com/in/alvinnsss/',
+        'github' => 'https://github.com/alvinyosi',
+        'instagram' => 'https://www.instagram.com/zx.v1nnn/',
+    ],
+    'projects' => [
+        [
+            'title' => 'Dapoer Mamana',
+            'category' => 'UI/UX DESIGN',
+            'image' => 'images/project-dapoer-mamana.png',
+            'alt' => 'Preview antarmuka sistem pre-order Dapoer Mamana',
+            'description' => 'Desain UI/UX sistem pre-order web untuk UMKM Dapoer Mamana menggunakan metode User-Centered Design.',
+            'platform' => 'Web application',
+            'type' => 'UI/UX & product design',
+            'tools' => 'Figma, FigJam',
+            'url' => '#contact',
+            'case_study' => '#contact',
+            'featured' => true,
+        ],
+        [
+            'title' => 'Catering Log Book',
+            'category' => 'WEB APPLICATION',
+            'image' => 'images/project-logbook-catering.png',
+            'alt' => 'Preview dashboard log book catering',
+            'description' => 'Aplikasi pencatatan operasional catering yang dikembangkan saat magang di PT Multi Spunindo Jaya Tbk.',
+            'platform' => 'Web application',
+            'type' => 'Internship project',
+            'tools' => 'Laravel, MySQL',
+            'url' => '#contact',
+            'featured' => false,
+        ],
+        [
+            'title' => 'Personal Portfolio',
+            'category' => 'WEB DEVELOPMENT',
+            'image' => 'images/project-portfolio.svg',
+            'alt' => 'Preview website portofolio personal',
+            'description' => 'Eksplorasi website portofolio minimalis dengan fokus pada tipografi, interaksi, dan aksesibilitas.',
+            'platform' => 'Web',
+            'type' => 'Personal project',
+            'tools' => 'Laravel, Tailwind CSS',
+            'url' => '#contact',
+            'featured' => false,
+        ],
+    ],
+];

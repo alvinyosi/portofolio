@@ -1,0 +1,150 @@
+<?php
+
+return [
+    [
+        'title' => 'Dapoer Mamana',
+        'category' => 'UI/UX DESIGN',
+        'year' => '2025',
+        'role' => 'UI/UX & product design',
+        'description' => 'Desain UI/UX sistem pre-order web untuk UMKM Dapoer Mamana menggunakan metode User-Centered Design.',
+        'impact' => 'Seluruh skenario pengujian dapat dikerjakan dengan baik oleh pengguna.',
+        'tags' => ['Figma', 'FigJam'],
+        'image' => 'images/project-dapoer-mamana.png',
+        'image_width' => 1151,
+        'image_height' => 768,
+        'alt' => 'Preview antarmuka sistem pre-order Dapoer Mamana',
+        'image_position' => 'center',
+        'image_class' => 'project-image-screenshot',
+        'url' => '#contact',
+        'github' => null,
+        'featured' => true,
+        'platform' => 'Web application',
+        'type' => 'UI/UX & product design',
+        'tools' => 'Figma, FigJam',
+        'case_study' => '#contact',
+        'detail' => [
+            'title' => 'Perancangan UI/UX Sistem Pre-Order Berbasis Web (Dapoer Mamana)',
+            'label' => 'TUGAS AKHIR (TA)',
+            'summary' => 'Tugas Akhir perancangan UI/UX sistem pre-order berbasis web untuk UMKM Dapoer Mamana menggunakan metode User-Centered Design (UCD).',
+            'info' => [
+                [
+                    'label' => 'METODE',
+                    'value' => 'User-Centered Design (UCD)',
+                ],
+            ],
+            'highlights' => [
+                [
+                    'value' => '77,65',
+                    'label' => 'Skor akhir pengujian SUS',
+                ],
+                [
+                    'value' => '33',
+                    'label' => 'Responden',
+                ],
+                [
+                    'value' => '100%',
+                    'label' => 'Skenario berhasil dikerjakan (User Scenario Test)',
+                ],
+            ],
+            'kesimpulan' => 'Pengujian user scenario test menunjukkan seluruh skenario (100%) dapat dikerjakan dengan baik oleh pengguna.',
+        ],
+    ],
+    [
+        'title' => 'Catering Log Book',
+        'category' => 'WEB APPLICATION',
+        'year' => '2025',
+        'role' => 'Fullstack Developer · Magang',
+        'description' => 'Aplikasi pencatatan operasional catering yang dikembangkan saat magang di PT Multi Spunindo Jaya Tbk.',
+        'impact' => 'Menggantikan pencatatan manual operasional catering.',
+        'tags' => ['Laravel', 'MySQL', 'Bootstrap', 'JavaScript'],
+        'image' => 'images/project-logbook-catering.png',
+        'image_width' => 1365,
+        'image_height' => 768,
+        'alt' => 'Dashboard aplikasi Catering Log Book MSJ dengan ringkasan shift, porsi, dan menu.',
+        'image_position' => 'center',
+        'image_class' => 'project-image-screenshot',
+        'url' => '#contact',
+        'github' => null,
+        'detail' => [
+            'label' => 'PENGALAMAN MAGANG',
+            'title' => 'Catering Log Book',
+            'summary' => 'Aplikasi pencatatan operasional catering yang dikembangkan selama magang di PT Multi Spunindo Jaya Tbk, divisi MIS (Management Information Systems). Dikerjakan dari tahap blueprint/desain hingga penyusunan manual book.',
+            'info' => [
+                [
+                    'label' => 'PERAN',
+                    'value' => 'Full Stack Developer',
+                ],
+                [
+                    'label' => 'STACK',
+                    'value' => 'Laravel, MySQL, Bootstrap, JavaScript',
+                ],
+                [
+                    'label' => 'PERIODE',
+                    'value' => 'Februari - Juli 2025',
+                ],
+            ],
+            'highlights' => [
+                [
+                    'value' => '6',
+                    'label' => 'Bulan pengembangan (magang)',
+                ],
+                [
+                    'value' => 'FULL STACK',
+                    'label' => 'Peran dari desain hingga manual book',
+                ],
+            ],
+            'fitur' => [
+                'Dashboard ringkasan per shift',
+                'Rencana (plan) catering harian',
+                'Ringkasan menu hari ini dan top menu',
+                'Notifikasi jadwal catering',
+                'Notifikasi temuan, tindak lanjut, dan expired',
+            ],
+            'kesimpulan' => 'Aplikasi menggantikan pencatatan manual operasional catering.',
+        ],
+    ],
+    [
+        'title' => 'Personal Portfolio',
+        'category' => 'WEB DEVELOPMENT',
+        'year' => '2026',
+        'role' => 'UI/UX Designer · Frontend Developer',
+        'description' => 'Website portofolio personal untuk menampilkan project, pengalaman, dan informasi profesional.',
+        'impact' => 'Menyatukan profil dan karya dalam satu pengalaman digital yang responsif.',
+        'tags' => ['Laravel', 'Tailwind CSS', 'Motion', 'JavaScript'],
+        'image' => 'images/project-portfolio.svg',
+        'image_width' => 1000,
+        'image_height' => 620,
+        'alt' => 'Pratinjau website portofolio personal bertema gelap dengan ilustrasi kubus wireframe.',
+        'image_position' => 'center',
+        'image_class' => 'project-image-screenshot',
+        'url' => '#contact',
+        'github' => null,
+        'detail' => [
+            'label' => 'PROJECT PRIBADI',
+            'title' => 'Personal Portfolio',
+            'summary' => 'Website portofolio personal untuk menampilkan project, pengalaman, dan informasi profesional dengan tema gelap minimalis, fokus pada tipografi, interaksi, dan aksesibilitas.',
+            'info' => [
+                [
+                    'label' => 'PERAN',
+                    'value' => 'UI/UX Designer · Frontend Developer',
+                ],
+                [
+                    'label' => 'STACK',
+                    'value' => 'Laravel, Tailwind CSS, Motion, JavaScript',
+                ],
+                [
+                    'label' => 'TAHUN',
+                    'value' => '2026',
+                ],
+            ],
+            'highlights' => [],
+            'fitur' => [
+                'Animasi masuk dan interaksi halus dengan Motion',
+                'Desain responsif untuk mobile, tablet, dan desktop',
+                'Daftar project dengan modal detail',
+                'Unduh CV langsung dari website',
+            ],
+            'kesimpulan' => 'Menyatukan profil dan karya dalam satu pengalaman digital yang responsif.',
+        ],
+    ],
+];
