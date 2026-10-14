@@ -8,8 +8,14 @@
     </nav>
     <p>© 2026 ALVIN, HUBUNGI: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to={{ rawurlencode($email) }}" target="_blank" rel="noopener noreferrer">{{ $email }}</a></p>
     <div class="footer-socials">
-        <a href="{{ $socials['linkedin'] }}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN ↗</a>
-        <a href="{{ $socials['github'] }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH ↗</a>
+        @foreach ($socials as $name => $url)
+            @php
+                $socialName = ['linkedin' => 'LinkedIn', 'github' => 'GitHub', 'instagram' => 'Instagram'][$name] ?? ucfirst($name);
+            @endphp
+            <a class="footer-social-link" href="{{ $url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $socialName }}">
+                <x-icon :name="$name" />
+            </a>
+        @endforeach
         <a href="{{ asset('cv/CV Alvin Yosi E. P.pdf') }}" download>CV ↓</a>
     </div>
 </footer>

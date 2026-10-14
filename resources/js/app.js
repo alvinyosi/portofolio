@@ -1,4 +1,5 @@
 import './bootstrap';
+import './contact-socials.js';
 import { animate, inView, stagger } from 'motion';
 
 const initialLocationHash = window.location.hash;
@@ -32,6 +33,126 @@ if (!reduceMotion) {
                 ease: [0.22, 1, 0.36, 1],
             });
         }, { amount: 0.08 });
+    }
+
+    const internshipSection = document.querySelector('[data-internship]');
+
+    if (internshipSection) {
+        const items = [...internshipSection.querySelectorAll('[data-internship-item]')];
+
+        inView(internshipSection, () => {
+            if (internshipSection.dataset.revealed) return;
+            internshipSection.dataset.revealed = 'true';
+            animate(items, { opacity: [0, 1], y: [24, 0] }, {
+                delay: stagger(0.1),
+                duration: 0.7,
+                ease: [0.22, 1, 0.36, 1],
+            });
+        }, { amount: 0.12 });
+    }
+
+    const featuredResults = document.querySelector('[data-featured-results]');
+
+    if (featuredResults) {
+        const items = [...featuredResults.querySelectorAll('[data-featured-result]')];
+
+        inView(featuredResults, () => {
+            if (featuredResults.dataset.revealed) return;
+            featuredResults.dataset.revealed = 'true';
+            animate(items, { opacity: [0, 1], y: [24, 0] }, {
+                delay: stagger(0.1),
+                duration: 0.65,
+                ease: [0.22, 1, 0.36, 1],
+            });
+        }, { amount: 0.35 });
+    }
+
+    document.querySelectorAll('[data-timeline]').forEach((timeline) => {
+        const items = [...timeline.querySelectorAll('[data-timeline-item]')];
+        const line = timeline.querySelector('[data-timeline-line]');
+
+        inView(timeline, () => {
+            if (timeline.dataset.revealed) return;
+            timeline.dataset.revealed = 'true';
+
+            if (line) {
+                animate(line, { scaleY: [0, 1] }, {
+                    duration: 0.9,
+                    ease: [0.22, 1, 0.36, 1],
+                });
+            }
+
+            animate(items, { opacity: [0, 1], y: [20, 0] }, {
+                delay: stagger(0.1),
+                duration: 0.65,
+                ease: [0.22, 1, 0.36, 1],
+            });
+        }, { amount: 0.2 });
+    });
+
+    document.querySelectorAll('[data-skill-group]').forEach((group) => {
+        const tags = [...group.querySelectorAll('[data-skill-tag]')];
+
+        inView(group, () => {
+            if (group.dataset.revealed) return;
+            group.dataset.revealed = 'true';
+            animate(tags, { opacity: [0, 1], y: [12, 0] }, {
+                delay: stagger(0.03),
+                duration: 0.45,
+                ease: [0.22, 1, 0.36, 1],
+            });
+        }, { amount: 0.2 });
+    });
+
+    const profilePhoto = document.querySelector('[data-profile-photo]');
+
+    if (profilePhoto) {
+        const backdrop = profilePhoto.querySelector('[data-profile-backdrop]');
+
+        inView(profilePhoto, () => {
+            if (profilePhoto.dataset.revealed) return;
+            profilePhoto.dataset.revealed = 'true';
+            animate(profilePhoto, { opacity: [0, 1], y: [24, 0] }, {
+                duration: 0.7,
+                ease: [0.22, 1, 0.36, 1],
+            });
+        }, { amount: 0.25 });
+
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            profilePhoto.addEventListener('pointermove', (event) => {
+                const bounds = profilePhoto.getBoundingClientRect();
+                const relativeX = (event.clientX - bounds.left) / bounds.width - 0.5;
+                const relativeY = (event.clientY - bounds.top) / bounds.height - 0.5;
+                const rotateY = relativeX * 12;
+                const rotateX = relativeY * -12;
+
+                animate(profilePhoto, { rotateX, rotateY }, {
+                    duration: 0.16,
+                    ease: [0.22, 1, 0.36, 1],
+                });
+
+                if (backdrop) {
+                    animate(backdrop, { x: relativeX * -5, y: relativeY * -5 }, {
+                        duration: 0.2,
+                        ease: [0.22, 1, 0.36, 1],
+                    });
+                }
+            });
+
+            profilePhoto.addEventListener('pointerleave', () => {
+                animate(profilePhoto, { rotateX: 0, rotateY: 0 }, {
+                    duration: 0.45,
+                    ease: [0.22, 1, 0.36, 1],
+                });
+
+                if (backdrop) {
+                    animate(backdrop, { x: 0, y: 0 }, {
+                        duration: 0.45,
+                        ease: [0.22, 1, 0.36, 1],
+                    });
+                }
+            });
+        }
     }
 }
 
@@ -362,9 +483,11 @@ if (detailDialog && detailDataElement) {
     });
 }
 
-const observedSections = [...document.querySelectorAll('#top, #projects, #about, #contact')];
+const observedSections = [...document.querySelectorAll('#top, #tugas-akhir, #magang, #projects, #about, #education, #experience, #skills, #contact')];
 const sectionLinks = [...document.querySelectorAll('[data-section-link]')];
 const observedSectionIds = new Set(observedSections.map((section) => section.id));
+const aboutSectionIds = new Set(['about', 'education', 'experience', 'skills']);
+const projectSectionIds = new Set(['tugas-akhir', 'magang', 'projects']);
 let pendingSectionId = null;
 let isProgrammaticScrolling = false;
 let programmaticScrollTimeout;
@@ -381,7 +504,7 @@ document.addEventListener('click', (event) => {
 });
 
 function setActiveSection(sectionId) {
-    const activeHash = `#${sectionId}`;
+    const activeHash = `#${aboutSectionIds.has(sectionId) ? 'about' : projectSectionIds.has(sectionId) ? 'projects' : sectionId}`;
 
     sectionLinks.forEach((link) => {
         if (link.getAttribute('href') === activeHash) {

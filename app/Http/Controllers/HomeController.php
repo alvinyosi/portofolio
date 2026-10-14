@@ -8,18 +8,28 @@ class HomeController extends Controller
 {
     public function __invoke(): View
     {
-        $projects = config('projects');
+        $projects = collect(config('projects'));
+        $projectsByGroup = $projects->groupBy('group');
 
         return view('home', [
-            'featuredProject' => collect($projects)->firstWhere('featured', true),
-            'projects' => array_values(array_filter($projects, fn (array $project) => empty($project['featured']))),
-            'projectDetails' => collect($projects)
+            'featuredProject' => $projectsByGroup->get('tugas_akhir', collect())->first(),
+            'internshipProject' => $projectsByGroup->get('magang', collect())->first(),
+            'projects' => $projectsByGroup->get('lainnya', collect())->values(),
+            'projectDetails' => $projects
                 ->filter(fn (array $project) => isset($project['detail']))
-                ->mapWithKeys(fn (array $project) => [
-                    $project['title'] => array_merge($project['detail'], [
-                        'github' => $project['github'] ?? null,
-                    ]),
-                ])
+                ->mapWithKeys(function (array $project): array {
+                    $detail = $project['detail'];
+
+                    if (($project['group'] ?? null) === 'tugas_akhir') {
+                        $detail['title'] = config('portfolio.education.0.tugas_akhir');
+                    }
+
+                    return [
+                        $project['title'] => array_merge($detail, [
+                            'github' => $project['github'] ?? null,
+                        ]),
+                    ];
+                })
                 ->all(),
         ]);
     }

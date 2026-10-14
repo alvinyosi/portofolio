@@ -3,6 +3,7 @@
 return [
     [
         'title' => 'Dapoer Mamana',
+        'group' => 'tugas_akhir',
         'category' => 'UI/UX DESIGN',
         'year' => '2025',
         'role' => 'UI/UX & product design',
@@ -51,6 +52,7 @@ return [
     ],
     [
         'title' => 'Catering Log Book',
+        'group' => 'magang',
         'category' => 'WEB APPLICATION',
         'year' => '2025',
         'role' => 'Fullstack Developer · Magang',
@@ -105,6 +107,7 @@ return [
     ],
     [
         'title' => 'Personal Portfolio',
+        'group' => 'lainnya',
         'category' => 'WEB DEVELOPMENT',
         'year' => '2026',
         'role' => 'UI/UX Designer · Frontend Developer',

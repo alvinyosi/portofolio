@@ -5,11 +5,12 @@
 <main id="main-content">
     <x-hero />
     <x-featured-project :project="$featuredProject" />
+    <x-internship-project :project="$internshipProject" />
     <section id="projects" class="section-shell border-top" aria-labelledby="projects-title" tabindex="-1">
         <div class="section-heading" data-reveal>
-            <p class="eyebrow">02 / SELECTED WORK</p>
+            <p class="eyebrow">03 / SELECTED WORK</p>
             <h2 id="projects-title" class="section-title">PROJECT LAINNYA<span class="text-muted">.</span></h2>
-            <p class="section-intro">Beberapa hal yang pernah saya rancang dan bangun.</p>
+            <p class="section-intro">Project pribadi dan eksplorasi lainnya.</p>
         </div>
         <div class="project-grid" data-project-grid>
             @foreach ($projects as $project)
@@ -21,6 +22,9 @@
         </div>
     </section>
     <x-about />
+    <x-education />
+    <x-experience />
+    <x-skills />
     <x-stats />
     <x-cv-section />
     <x-contact :socials="config('portfolio.socials')" :email="config('portfolio.email')" />

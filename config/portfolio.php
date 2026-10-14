@@ -12,6 +12,7 @@ return [
     'projects' => [
         [
             'title' => 'Dapoer Mamana',
+            'group' => 'tugas_akhir',
             'category' => 'UI/UX DESIGN',
             'image' => 'images/project-dapoer-mamana.png',
             'alt' => 'Preview antarmuka sistem pre-order Dapoer Mamana',
@@ -25,6 +26,7 @@ return [
         ],
         [
             'title' => 'Catering Log Book',
+            'group' => 'magang',
             'category' => 'WEB APPLICATION',
             'image' => 'images/project-logbook-catering.png',
             'alt' => 'Preview dashboard log book catering',
@@ -37,6 +39,7 @@ return [
         ],
         [
             'title' => 'Personal Portfolio',
+            'group' => 'lainnya',
             'category' => 'WEB DEVELOPMENT',
             'image' => 'images/project-portfolio.svg',
             'alt' => 'Preview website portofolio personal',
@@ -48,4 +51,72 @@ return [
             'featured' => false,
         ],
     ],
+    'education' => [
+        [
+            'institution' => 'Universitas Dinamika',
+            'degree' => 'S1 Sistem Informasi',
+            'period' => '2022 — 2026',
+            'start_year' => '2022',
+            'end_year' => '2026',
+            'gpa' => '3,52',
+            'thesis' => 'Perancangan UI/UX Berbasis Web pada UMKM Dapoer Mamana Menggunakan Metode UCD',
+            'tugas_akhir' => 'Perancangan UI/UX Berbasis Web pada UMKM Dapoer Mamana Menggunakan Metode UCD',
+        ],
+    ],
+    'experience' => [
+        [
+            'id' => 'internship-experience',
+            'type' => 'MAGANG',
+            'role' => 'Full Stack Developer (Magang)',
+            'organization' => 'PT Multi Spunindo Jaya Tbk, divisi MIS (Management Information Systems)',
+            'period' => 'Februari — Juli 2025',
+            'period_start' => '2025-02',
+            'period_end' => '2025-07',
+            'points' => [
+                'Mengembangkan aplikasi Catering Log Book dari tahap blueprint/desain hingga penyusunan manual book.',
+                'Stack: Laravel, MySQL, Bootstrap, JavaScript.',
+            ],
+            'project_link' => '#magang',
+        ],
+        [
+            'id' => 'community-teaching',
+            'type' => 'KEGIATAN',
+            'role' => 'Pengabdian Masyarakat: Pengajar Desain Grafis',
+            'organization' => 'SDN Ngagel Rejo 1 Surabaya',
+            'points' => [
+                'Mengajar dasar desain grafis untuk siswa kelas 5.',
+            ],
+        ],
+    ],
+    'skills' => [
+        'Bahasa Pemrograman & Framework' => [
+            'PHP',
+            'JavaScript',
+            'Laravel',
+            'Bootstrap',
+            'Tailwind CSS',
+            'React',
+            'Motion',
+        ],
+        'Database' => ['MySQL'],
+        'Desain' => ['Figma'],
+        'Tools' => [
+            'VS Code',
+            'Postman',
+            'Git & GitHub',
+            'Composer',
+            'npm & Vite',
+        ],
+    ],
+    'languages' => [
+        'Bahasa Indonesia' => 'Native',
+        'English' => 'Menengah (aktif membaca dokumentasi teknis)',
+    ],
+    'availability' => [
+        'open' => true,
+        'label' => 'Terbuka untuk pekerjaan',
+        'detail' => 'IT Support, Junior Web Developer, IT Helpdesk, Junior QA',
+    ],
+    'whatsapp_number' => '6281233906129',
+    'whatsapp_message' => 'Halo Alvin, saya melihat portofolio Anda dan ingin berdiskusi.',
 ];

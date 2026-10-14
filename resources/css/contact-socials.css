@@ -1,0 +1,110 @@
+.contact-socials {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1 / -1;
+    gap: 12px 14px;
+}
+
+.contact-social-link {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #444;
+    border-radius: 2px;
+    padding: 0 14px;
+    color: #dedede;
+    font-size: var(--text-label);
+    letter-spacing: .08em;
+    transition: color .25s, border-color .25s, background-color .25s;
+}
+
+.contact-social-link svg {
+    width: 19px;
+    height: 19px;
+    flex: 0 0 auto;
+}
+
+.contact-social-arrow {
+    display: inline-block;
+    margin-left: 2px;
+    font-size: var(--text-label);
+    line-height: 1;
+    transition: transform .25s;
+}
+
+.contact-social-link:hover,
+.contact-social-link:focus-visible {
+    border-color: #f4f4f2;
+    background-color: #f4f4f2;
+    color: #080808;
+}
+
+.contact-social-link:hover .contact-social-arrow,
+.contact-social-link:focus-visible .contact-social-arrow {
+    transform: translate(3px, -3px);
+}
+
+.contact-social-link:focus-visible {
+    outline: 1px solid #fff;
+    outline-offset: 5px;
+}
+
+.contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.contact-email svg {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 auto;
+}
+
+.contact-email span {
+    flex: 0 0 auto;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+}
+
+.footer-social-link svg {
+    width: 15px;
+    height: 15px;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus-visible {
+    color: #fff;
+}
+
+html.js [data-contact-social-link] {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+@media (max-width: 600px) {
+    .contact-socials {
+        grid-column: auto;
+        gap: 10px;
+    }
+
+    .footer-socials {
+        gap: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html.js [data-contact-social-link] {
+        opacity: 1;
+        transform: none;
+    }
+}
